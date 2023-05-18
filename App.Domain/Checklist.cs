@@ -3,8 +3,8 @@ using App.Domain.Common;
 
 public class Checklist: Base
 {
-    public string Title {get; set;}
-    public string Description { get; set; }
+    public string Title {get; set;} = null!;
+    public string Description { get; set; } = null!;
     public int TaskId { get; set; }
     public bool status { get; set; }
 }

@@ -2,5 +2,5 @@ namespace App.Domain.Common;
 
 public class Base
 {
-    public int id;
+    public int Id;
 }
