@@ -1,4 +1,5 @@
 using App.Application.Contracts.Persistence;
+using App.Application.Features.Checklists.CQRS.Commands;
 using App.Application.Responses;
 using AutoMapper;
 using MediatR;

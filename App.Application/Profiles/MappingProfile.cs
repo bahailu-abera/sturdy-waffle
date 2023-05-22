@@ -15,7 +15,10 @@ namespace App.Application.Profiles;
     public MappingProfile()
     {
         CreateMap<TaskEntity, TaskDto>().ReverseMap();
-        CreateMap<TaskEntity, CreateTaskDto>().ReverseMap();
+        CreateMap<CreateTaskDto, TaskEntity>()
+        .ForMember(dest => dest.Id, opt => opt.Ignore()); // I
+        
+        CreateMap<TaskEntity, CreateTaskDto>();
         
         CreateMap<Checklist, ChecklistDto>().ReverseMap();
         CreateMap<Checklist, CreateChecklistDto>().ReverseMap();

@@ -23,6 +23,9 @@ public class CreateTaskCommandHandler : IRequestHandler<CreateTaskCommand, BaseR
     public async Task<BaseResponse<Nullable<int>>> Handle(CreateTaskCommand request, CancellationToken cancellationToken)
     {
         BaseResponse<Nullable<int>> response;
+        // Convert the DateTime value to UTC here
+        request.TaskDto.StartDate = request.TaskDto.StartDate.ToUniversalTime();
+        request.TaskDto.EndDate = request.TaskDto.EndDate.ToUniversalTime();
         
         var taskEntity = _mapper.Map<TaskEntity>(request.TaskDto);
         

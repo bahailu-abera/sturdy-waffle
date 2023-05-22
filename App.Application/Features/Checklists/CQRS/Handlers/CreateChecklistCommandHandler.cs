@@ -1,5 +1,5 @@
 using App.Application.Contracts.Persistence;
-using App.Application.Features.Checklists.DTOs;
+using App.Application.Features.Checklists.CQRS.Commands;
 using App.Application.Responses;
 using App.Domain;
 using AutoMapper;

@@ -2,7 +2,7 @@ using App.Application.Features.Checklists.DTOs;
 using App.Application.Responses;
 using MediatR;
 
-namespace App.Application.Features.Checklists.CQRS;
+namespace App.Application.Features.Checklists.CQRS.Commands;
 
 public class CreateChecklistCommand: IRequest<BaseResponse<Nullable<int>>>
 {

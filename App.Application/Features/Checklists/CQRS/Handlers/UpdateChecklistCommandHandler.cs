@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using App.Application.Contracts.Persistence;
 using App.Application.Responses;
+using App.Application.Features.Checklists.CQRS.Commands;
 
 namespace App.Application.Features.Checklists.CQRS.Handlers;
 

@@ -11,7 +11,7 @@ public static class PersistenceServicesRegistration
     public static IServiceCollection ConfigurePersistenceServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseNpgsql(configuration.GetConnectionString("AppConnectionString")));
+            options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
         
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ITaskRepository, TaskRepository>();
