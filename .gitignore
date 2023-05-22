@@ -1,6 +1,7 @@
 # VSCode
 ../.vscode/
 /.vscode/
+
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -94,6 +95,7 @@ cython_debug/
 **/net6.0/
 **/net7.0/
 **/bin/
+
 **/.vs/
 
 # Migrations file
